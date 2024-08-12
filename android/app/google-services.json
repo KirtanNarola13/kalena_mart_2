@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "507661018958",
+    "project_id": "kalena-mart-8fbf0",
+    "storage_bucket": "kalena-mart-8fbf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507661018958:android:46f9b398900c8c2756201f",
+        "android_client_info": {
+          "package_name": "com.example.kalena_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507661018958-r76r8ffj1ib41o1t3pa3eq9tjfo19qrn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kalena_admin",
+            "certificate_hash": "7b6da0797fa913ee1bb5b1bc09cfb99a2c5e185c"
+          }
+        },
+        {
+          "client_id": "507661018958-7sonm85bf8t6gsn67au7oiqnvq2rvqtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6wkz1qWJGRiNwLgbwigll_4c_tZUjUAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507661018958-7sonm85bf8t6gsn67au7oiqnvq2rvqtv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "507661018958-4t5d7vfiud20ts1i7i057tgqkscvq8ir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kalenaMart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507661018958:android:87840b509f3bf32056201f",
+        "android_client_info": {
+          "package_name": "com.example.kalena_mart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507661018958-7sonm85bf8t6gsn67au7oiqnvq2rvqtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6wkz1qWJGRiNwLgbwigll_4c_tZUjUAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507661018958-7sonm85bf8t6gsn67au7oiqnvq2rvqtv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "507661018958-4t5d7vfiud20ts1i7i057tgqkscvq8ir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kalenaMart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
