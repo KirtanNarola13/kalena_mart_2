@@ -1,10 +1,7 @@
-import 'dart:developer';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kalena_mart/constants/string.dart';
 import 'package:kalena_mart/modules/screens/address-screen/view/const/address_const.dart';
 import 'package:kalena_mart/utils/firestore_helper.dart';
 import 'package:line_icons/line_icons.dart';
@@ -448,6 +445,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             ),
                                           ),
                                         ),
+                                        Text(
+                                          "Note : In case mrp change , disscount will be same apply",
+                                          style: TextStyle(fontSize: 10),
+                                        )
                                       ],
                                     ),
                                   ),
