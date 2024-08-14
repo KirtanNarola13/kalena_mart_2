@@ -1,11 +1,10 @@
 import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kalena_mart/utils/firestore_helper.dart';
 import 'package:kalena_mart/constants/string.dart';
+import 'package:kalena_mart/utils/firestore_helper.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -208,7 +207,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     SizedBox(height: height / 50),
                     Container(
-                      height: height * 0.7,
+                      height: height * 0.6,
                       child: ListView.builder(
                         itemCount: _resultList.length,
                         itemBuilder: (context, i) {
