@@ -150,6 +150,7 @@
 // }
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+
 import '../../../../utils/auth-helper.dart';
 import '../../../../utils/firestore_helper.dart';
 
@@ -197,7 +198,7 @@ class _MyOrderScreenState extends State<MyOrderScreen> {
                             Container(
                               alignment: Alignment.center,
                               margin: const EdgeInsets.all(10),
-                              height: height * 0.2,
+                              height: height * 0.23,
                               decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius:
@@ -214,7 +215,6 @@ class _MyOrderScreenState extends State<MyOrderScreen> {
                                             Radius.circular(15)),
                                         image: DecorationImage(
                                           image: NetworkImage(product['image']),
-                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),

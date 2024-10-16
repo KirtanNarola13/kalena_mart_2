@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:kalena_mart/modules/screens/address-screen/view/const/address_const.dart';
 import 'package:kalena_mart/utils/firestore_helper.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../utils/auth-helper.dart';
 
@@ -368,87 +367,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             ),
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.only(top: 20),
-                            padding: const EdgeInsets.all(10),
-                            height: height * 0.13,
-                            width: width / 1.1,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(15),
-                              ),
-                            ),
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    margin: const EdgeInsets.all(5),
-                                    alignment: Alignment.center,
-                                    decoration: const BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(10),
-                                      ),
-                                      color: Colors.white,
-                                    ),
-                                    child: const Icon(
-                                      LineIcons.whatSApp,
-                                      size: 35,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 10, top: 5, bottom: 5),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        const Expanded(
-                                          child: Text(
-                                            "+91 79841 80938",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
-                                              letterSpacing: 1.5,
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: SizedBox(
-                                            height: height * 0.3,
-                                            child: TextButton(
-                                              onPressed: () {
-                                                launchUrl(
-                                                  Uri(
-                                                    scheme: "https",
-                                                    path: "wa.me/+917984180938",
-                                                  ),
-                                                );
-                                              },
-                                              child: const Text(
-                                                "contact",
-                                                style: TextStyle(
-                                                    color: Colors.blue),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Text(
-                                          "Note : In case mrp change , disscount will be same apply",
-                                          style: TextStyle(fontSize: 10),
-                                        )
                                       ],
                                     ),
                                   ),

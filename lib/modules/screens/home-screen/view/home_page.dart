@@ -1,10 +1,13 @@
 import 'dart:developer';
 
+import 'package:cherry_toast/cherry_toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kalena_mart/constants/string.dart';
 import 'package:kalena_mart/utils/firestore_helper.dart';
+
+import '../../../../utils/model/cart_modal.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -270,11 +273,54 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                         ),
                                         const SizedBox(height: 5),
-                                        Text(
-                                          productData['description'],
-                                          style: TextStyle(
-                                            color: Colors.grey.shade700,
-                                          ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            SizedBox(
+                                              width: width * 0.5,
+                                              child: Text(
+                                                productData['description'],
+                                                style: TextStyle(
+                                                  color: Colors.grey.shade700,
+                                                ),
+                                              ),
+                                            ),
+                                            GestureDetector(
+                                              onTap: () {
+                                                CherryToast.success(
+                                                  title: const Text(
+                                                      "Product Added"),
+                                                ).show(context);
+                                                CartModal cartModal = CartModal(
+                                                  name: productData['name'],
+                                                  price: productData['price'],
+                                                  mrp: productData['mrp'],
+                                                  image: productData['image'],
+                                                  description: productData[
+                                                      'description'],
+                                                );
+                                                FireStoreHelper.fireStoreHelper
+                                                    .cartProduct(cartModal);
+                                                setState(() {});
+                                              },
+                                              child: Container(
+                                                height: 30,
+                                                width: 90,
+                                                alignment: Alignment.center,
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                    Radius.circular(10),
+                                                  ),
+                                                ),
+                                                child: Text("Add to card"),
+                                              ),
+                                            ),
+                                          ],
                                         ),
                                         const SizedBox(height: 5),
                                         Row(
